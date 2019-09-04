@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.pers</groupId>
+  <artifactId>deliver</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20190904.122953</timestamp>
+      <buildNumber>5</buildNumber>
+    </snapshot>
+    <lastUpdated>20190904122953</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.0.1-20190904.122953-5</value>
+        <updated>20190904122953</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.0.1-20190904.122953-5</value>
+        <updated>20190904122953</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
