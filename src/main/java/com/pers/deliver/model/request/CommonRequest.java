@@ -30,17 +30,4 @@ public class CommonRequest {
     //备注
     String remark;
 
-    public void setCommon(WxDeliveryConfig wxDeliveryConfig){
-        this.setAccess_token("");
-        this.setDelivery_id("");
-        this.setWaybill_id("");
-        this.setSub_biz_id("");
-        this.setShop_no("");
-        this.setShop_order_id("");
-        this.setShopid("");
-        this.setDelivery_sign("");
-        this.setDelivery_token("");
-        this.setRemark("");
-        this.setOpenid("");
-    }
 }

@@ -20,4 +20,27 @@ public class DateUtil {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return sdf.parse(dateString);
     }
+
+    /**
+     * 返回当前时间的秒数
+     *
+     * @return
+     */
+    public static int unixTime() {
+        return (int) (System.currentTimeMillis() / 1000);
+    }
+
+    /**
+     * 把表转换为Date
+     *
+     * @param seconds
+     * @return
+     */
+    public static Date fromUnixTime(Integer seconds) {
+        return new Date(seconds * 1000L);
+    }
+
+    public static Date fromUnixTime(Long seconds) {
+        return new Date(seconds * 1000L);
+    }
 }

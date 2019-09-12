@@ -4,29 +4,29 @@ import com.pers.deliver.model.request.AddOrderRequest;
 import com.pers.deliver.model.request.AddTipRequest;
 import com.pers.deliver.model.request.CancelOrderRequest;
 import com.pers.deliver.model.request.CommonRequest;
-import com.pers.deliver.model.response.CommonResponse;
+
+import java.io.IOException;
+import java.util.Map;
 
 public interface ImmediateDeliveryService {
 
-    String getAccessToken();
+    Map getBindAccount() throws IOException;
 
-    CommonResponse getBindAccount();
+    Map getAllImmeDelivery() throws IOException;
 
-    CommonResponse getAllImmeDelivery();
+    Map preAddOrder(AddOrderRequest addOrderRequest)throws IOException;
 
-    CommonResponse preAddOrder(AddOrderRequest addOrderRequest);
+    Map addOrder(AddOrderRequest addOrderRequest)throws IOException;
 
-    CommonResponse addOrder(AddOrderRequest addOrderRequest);
+    Map reOrder(AddOrderRequest addOrderRequest)throws IOException;
 
-    CommonResponse reOrder(AddOrderRequest addOrderRequest);
+    Map addTip(AddTipRequest addTipRequest)throws IOException;
 
-    CommonResponse addTip(AddTipRequest addTipRequest);
+    Map preCancelOrder(CancelOrderRequest cancelOrderRequest)throws IOException;
 
-    CommonResponse preCancelOrder(CancelOrderRequest cancelOrderRequest);
+    Map cancelOrder(CancelOrderRequest cancelOrderRequest)throws IOException;
 
-    CommonResponse cancelOrder(CancelOrderRequest cancelOrderRequest);
+    Map abnormalConfirm(CommonRequest commonRequest)throws IOException;
 
-    CommonResponse abnormalConfirm(CommonRequest commonRequest);
-
-    CommonResponse getOrder(CommonRequest commonRequest);
+    Map getOrder(CommonRequest commonRequest)throws IOException;
 }
