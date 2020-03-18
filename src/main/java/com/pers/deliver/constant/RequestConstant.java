@@ -11,6 +11,11 @@ public class RequestConstant {
     public static final String API_URL = "https://api.weixin.qq.com/cgi-bin/express/local/business";
 
     /**
+     * 获取接口凭证
+     */
+    public static final String ACCESSTOKEN = API_URL + "/cgi-bin/token";
+
+    /**
      * 拉取已绑定账号
      */
     public static final String GETBINDACCOUNT = API_URL + "/shop/get";

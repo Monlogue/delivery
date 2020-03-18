@@ -6,6 +6,7 @@ import com.pers.deliver.model.request.CancelOrderRequest;
 import com.pers.deliver.model.request.CommonRequest;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 public interface ImmediateDeliveryService {
@@ -29,4 +30,6 @@ public interface ImmediateDeliveryService {
     Map abnormalConfirm(CommonRequest commonRequest)throws IOException;
 
     Map getOrder(CommonRequest commonRequest)throws IOException;
+
+    List<Map> getDeliveryFee(AddOrderRequest addOrderRequest)throws IOException;
 }
